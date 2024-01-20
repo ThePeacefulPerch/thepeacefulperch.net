@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=http://www.thepeacefulperch.net">
-    <title>The Peaceful Perch</title>
-    <script>
-        // Check for query string
-        const queryString = window.location.search;
-        if (queryString) {
-            // Redirect with query string
-            window.location.href = `http://www.thepeacefulperch.net${queryString}`;
-        }
-    </script>
-</head>
-</html>
+<script>
+  if (window.location.hostname !== "thepeacefulperch.net") {
+    window.location.href = "https://www.thepeacefulperch.net" + window.location.pathname + window.location.search;
+  }
+</script>
